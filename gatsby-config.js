@@ -15,7 +15,6 @@ module.exports = {
         config.siteUrl,
         config.pathPrefix
       )}/logos/logo-512.png`,
-      copyright: config.copyright
     }
   },
   plugins: [
@@ -102,7 +101,7 @@ module.exports = {
         setup(ref) {
           const ret = ref.query.site.siteMetadata.rssMetadata;
           ret.allMarkdownRemark = ref.query.allMarkdownRemark;
-          ret.generator = "GatsbyJS Advanced Starter";
+          ret.generator = "Nathaniel Chu";
           return ret;
         },
         query: `
@@ -115,7 +114,6 @@ module.exports = {
                 title
                 description
                 image_url
-                copyright
               }
             }
           }

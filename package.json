@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-advanced",
-  "description": "GatsbyJS starter that includes examples for advanced use cases.",
-  "version": "1.1.0",
-  "author": "Ruben Harutyunyan <vagr9k@gmail.com>",
+  "name": "personal-website",
+  "description": "Personal website running on Gatsby, React, and Node.js.",
+  "version": "1.0.0",
+  "author": "Nathaniel Chu <nathanielchu4@gmail.com>",
   "dependencies": {
     "gatsby": "^2.15.28",
     "gatsby-image": "^2.2.23",
@@ -29,7 +29,6 @@
     "moment": "^2.24.0",
     "prismjs": "^1.16.0",
     "react": "^16.10.1",
-    "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.10.1",
     "react-helmet": "^5.2.1",
     "react-share": "^3.0.1",
