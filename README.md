@@ -1,223 +1,101 @@
-<div align="center" style="margin-bottom:30px">
-    <a href='https://github.com/vagr9k/gatsby-advanced-starter/blob/master/LICENSE'>
-    <img src="https://img.shields.io/github/license/vagr9k/gatsby-advanced-starter.svg" alt="Logo" />
-    </a>
-    <a href='https://github.com/vagr9k/gatsby-advanced-starter'>
-    <img src="https://img.shields.io/github/tag/vagr9k/gatsby-advanced-starter.svg" alt="Logo" />
-    </a>
-        <a href='https://github.com/vagr9k/gatsby-advanced-starter/stargazers'>
-    <img src="https://img.shields.io/github/stars/vagr9k/gatsby-advanced-starter.svg" alt="Logo" />
-    </a>
-        <a href="https://twitter.com/intent/tweet?text=A%20cool%20%40gatsbyjs%20starter%3A&url=https%3A%2F%2Fgithub.com%2FVagr9K%2Fgatsby-advanced-starter">
-    <img src="https://img.shields.io/twitter/url/https/github.com/vagr9k/gatsby-advanced-starter.svg?style=social" alt="Logo" />
-    </a>
-</div>
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+</p>
 
-
-
-<div align="center"  style="margin-bottom:30px">
-    <img src="static/logos/logo-1024.png" alt="Logo" width='200px' height='200px'/>
-</div>
-
+<h3 align="center">Project Title</h3>
 
 <div align="center">
-    <a href="https://codeclimate.com/github/Vagr9K/gatsby-advanced-starter">
-      <img src="https://codeclimate.com/github/Vagr9K/gatsby-advanced-starter/badges/gpa.svg" alt="Logo" />
-    </a>
-    <a href='https://codeclimate.com/github/Vagr9K/gatsby-advanced-starter'>
-      <img src="https://codeclimate.com/github/Vagr9K/gatsby-advanced-starter/badges/issue_count.svg" alt="Logo" />
-    </a>
-    <a href='https://www.codacy.com/app/Vagr9K/gatsby-advanced-starter?utm_source=github.com&utm_medium=referral&utm_content=Vagr9K/gatsby-advanced-starter&utm_campaign=Badge_Grade'>
-      <img src="https://api.codacy.com/project/badge/Grade/990fb54ea8094f2aa0ed77f14e859820" alt="Logo" />
-    </a>
-    <a href='https://github.com/prettier/prettier'>
-      <img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" alt="Logo" />
-    </a>
+
+  [![Status](https://img.shields.io/badge/status-active-success.svg)]() 
+  [![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
+  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+
 </div>
 
-# Gatsby Advanced Starter
+---
 
-A starter skeleton with advanced features for [Gatsby](https://github.com/gatsbyjs/gatsby/).
+<p align="center"> Few lines describing your project.
+    <br> 
+</p>
 
-**NOTE**: This branch contains Gatsby v2 compatible version of the starter. To get the Gatsby v1 compatible version, use the [`v1`](https://github.com/Vagr9K/gatsby-advanced-starter/tree/v1) branch.
+## Table of Contents
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Deployment](#deployment)
+- [Usage](#usage)
+- [Built Using](#built_using)
+- [TODO](../TODO.md)
+- [Contributing](../CONTRIBUTING.md)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgement)
 
-## Lighthouse Audit Score
+## About <a name = "about"></a>
+Write about 1-2 paragraphs describing the purpose of your project.
 
-<div align="center">
-    <a href="https://developers.google.com/web/tools/lighthouse/">
-      <img src="docs/pwa-score.png" alt="Lighthouse Score" />
-    </a>
-</div>
+## Getting Started <a name = "getting_started"></a>
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-Check out the [Features](#features) to read about all [Progressive Web App](https://developers.google.com/web/progressive-web-apps) capabilities of this starter in detail.
+### Prerequisites
+What things you need to install the software and how to install them.
 
-## Why?
-
-This project aims to provide a minimal base for building advanced GatsbyJS powered websites.
-
-It doesn't define any UI limitations in any way and only gives you the basic components for SEO/Social Media/etc while creating a comfortable development environment to get started.
-
-You are free to use any UI framework/styling options.
-
-## How can I use this?
-
-If you are a newcomer to Gatsby who's interested in the implementations of most needed features, this is a great place to start.
-
-If you are interested in a foundation for building ultra-fast websites, you can use this project as a "minimal" starter.
-
-[Demo website.](https://gatsby-advanced-starter-demo.netlify.com)
-
-## Features
-
-- Gatsby v2 support
-- Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
-- Posts in Markdown
-  - Code syntax highlighting
-  - Embed YouTube videos
-  - Embed Tweets
-- Pagination
-  - Configurable via `SiteConfig.js`
-- Tags
-  - Separate page for posts under each tag
-- Categories
-  - Separate page for posts under each category
-- [Disqus](https://disqus.com/) support
-  - Notifications about new disqus comments
-- `/static/` and content folders are available to use with [gatsby-image](https://www.gatsbyjs.org/docs/gatsby-image/) out of the box for optimized image generation
-- High configurability
-- Separate components for everything:
-  - User social profiles
-  - Copyright information
-  - More!
-- [NetlifyCMS](https://www.netlifycms.org) support out of the box
-- PWA features
-  - Offline support
-  - Web App Manifest support
-  - Loading progress for slow networks
-- SEO
-  - [Google Analytics](https://marketingplatform.google.com/about/analytics/) support
-  - Sitemap generation
-  - robots.txt
-  - General description tags
-  - [Schema.org JSONLD (Google Rich Snippets)](https://schema.org/)
-  - [OpenGraph Tags (Facebook/Google+/Pinterest)](https://ogp.me/)
-  - [Twitter Tags (Twitter Cards)](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/markup)
-- RSS feeds
-- Social features
-  - Twitter tweet button
-  - Facebook share/share count
-  - Reddit share/share count
-  - LinkedIn share button
-  - Telegram share button
-- Development tools
-  - [ESLint](https://eslint.org/) for linting
-  - [Prettier](https://prettier.io/) for code formatting
-  - Remark-Lint for linting Markdown
-  - write-good for linting English prose
-  - gh-pages for deploying to GitHub pages
-  - [Netlify](https://www.netlify.com/) deploy configuration
-  - [CodeClimate](https://codeclimate.com/) configuration file and badge
-
-NOTE: Feel free to check out [Gatsby Material Starter](https://github.com/Vagr9K/gatsby-material-starter) if you are interested in a more opinionated starter with Material Design in mind.
-
-## Getting Started
-
-Install this starter (assuming [Gatsby](https://github.com/gatsbyjs/gatsby/) is installed and updated) by running from your CLI:
-
-```sh
-gatsby new YourProjectName https://github.com/Vagr9K/gatsby-advanced-starter
-npm run develop # or gatsby develop
+```
+Give examples
 ```
 
-Or you can fork the project, make your changes there and merge new features when needed.
+### Installing
+A step by step series of examples that tell you how to get a development env running.
 
-Alternatively:
+Say what the step will be
 
-```sh
-git clone https://github.com/Vagr9K/gatsby-advanced-starter YourProjectName # Clone the project
-cd YourProjectname
-rm -rf .git # So you can have your own changes stored in VCS.
-npm install # or yarn install
-npm run develop # or gatsby develop
+```
+Give the example
 ```
 
-## Configuration
+And repeat
 
-Edit the export object in `data/SiteConfig`:
-
-```js
-module.exports = {
-  siteTitle: "Gatsby Advanced Starter", // Site title.
-  siteTitleShort: "GA Starter", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: "GatsbyJS Advanced Starter", // Alternative site title for SEO.
-  siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
-  siteUrl: "https://gatsby-advanced-starter-demo.netlify.com", // Domain of your website without pathPrefix.
-  pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
-  siteDescription: "A GatsbyJS stater with Advanced design in mind.", // Website description used for RSS feeds/meta description tag.
-  siteRss: "/rss.xml", // Path to the RSS file.
-  siteFBAppID: "1825356251115265", // FB Application ID for using app insights
-  googleAnalyticsID: "UA-47311644-5", // GA tracking ID.
-  disqusShortname: "https-vagr9k-github-io-gatsby-advanced-starter", // Disqus shortname.
-  postDefaultCategoryID: "Tech", // Default category for posts.
-  dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
-  dateFormat: "DD/MM/YYYY", // Date format for display.
-  postsPerPage: 4, // Amount of posts displayed per listing page.
-  userName: "Advanced User", // Username to display in the author segment.
-  userEmail: "AdvancedUser@example.com", // Email used for RSS feed's author segment
-  userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
-  userLocation: "North Pole, Earth", // User location to display in the author segment.
-  userAvatar: "https://api.adorable.io/avatars/150/test.png", // User avatar to display in the author segment.
-  userDescription:
-    "Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people.", // User description to display in the author segment.
-  // Links to social profiles/projects you want to display in the author segment/navigation bar.
-  userLinks: [
-    {
-      label: "GitHub",
-      url: "https://github.com/Vagr9K/gatsby-advanced-starter",
-      iconClassName: "fa fa-github"
-    },
-    {
-      label: "Twitter",
-      url: "https://twitter.com/Vagr9K",
-      iconClassName: "fa fa-twitter"
-    },
-    {
-      label: "Email",
-      url: "mailto:vagr9k@gmail.com",
-      iconClassName: "fa fa-envelope"
-    }
-  ],
-  copyright: "Copyright © 2019. Advanced User", // Copyright string for the footer of the website and RSS feed.
-  themeColor: "#c62828", // Used for setting manifest and progress theme colors.
-  backgroundColor: "#e0e0e0" // Used for setting manifest background color.
-};
+```
+until finished
 ```
 
-If want to customize Netlify CMS, e.g. registering custom widgets or styling the preview pane, you can do so by editing `src/netlifycms/index.js`:
+End with an example of getting some data out of the system or using it for a little demo.
 
-```js
-import CMS from "netlify-cms-app";
+## Running the tests <a name = "tests"></a>
+Explain how to run the automated tests for this system.
 
-CMS.init({
-  config: {
-    backend: {
-      name: "git-gateway"
-    }
-  }
-});
+### Break down into end to end tests
+Explain what these tests test and why
+
+```
+Give an example
 ```
 
-You can also optionally set `pathPrefix`:
+### And coding style tests
+Explain what these tests test and why
 
-```js
-module.exports = {
-  // Note: it must *not* have a trailing slash.
-  pathPrefix: "/gatsby-advanced-starter" // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
-};
+```
+Give an example
 ```
 
-WARNING: Make sure to edit `static/robots.txt` to include your domain for the sitemap!
+## Usage <a name="usage"></a>
+Add notes about how to use the system.
 
-# Author
+## Deployment <a name = "deployment"></a>
+Add additional notes about how to deploy this on a live system.
 
-Ruben Harutyunyan ([@Vagr9K](https://twitter.com/Vagr9K))
+## ⛏Built Using <a name = "built_using"></a>
+- [MongoDB](https://www.mongodb.com/) - Database
+- [Express](https://expressjs.com/) - Server Framework
+- [VueJs](https://vuejs.org/) - Web Framework
+- [NodeJs](https://nodejs.org/en/) - Server Environment
+
+## Authors <a name = "authors"></a>
+- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+
+See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
+
+## Acknowledgements <a name = "acknowledgement"></a>
+- Hat tip to anyone whose code was used
+- Inspiration
+- References
