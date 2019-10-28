@@ -16,16 +16,14 @@ const config = {
   userEmail: "nathanielchu4@gmail.com", // Email used for RSS feed's author segment
   userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
-  userLinks: [
+  menuLinks: [
     {
-      label: "GitHub",
-      url: "https://github.com/nathanielchu/personal-website",
-      iconClassName: "fa fa-github"
+      name: "Me",
+      link: "/me/",
     },
     {
-      label: "Email",
-      url: "mailto:nathanielchu4@gmail.com",
-      iconClassName: "fa fa-envelope"
+      name: "About",
+      link: "/about/",
     }
   ],
   themeColor: "#c62828", // Used for setting manifest and progress theme colors.

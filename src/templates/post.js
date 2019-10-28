@@ -6,7 +6,6 @@ import UserInfo from "../components/UserInfo";
 import PostTags from "../components/PostTags";
 import SocialLinks from "../components/SocialLinks";
 import SEO from "../components/SEO";
-import Footer from "../components/Footer";
 import config from "../../data/SiteConfig";
 
 export default class PostTemplate extends React.Component {
@@ -36,7 +35,6 @@ export default class PostTemplate extends React.Component {
               <SocialLinks postPath={slug} postNode={postNode} />
             </div>
             <UserInfo config={config} />
-            <Footer config={config} />
           </div>
         </div>
       </Layout>
