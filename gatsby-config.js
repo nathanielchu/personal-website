@@ -20,6 +20,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-lodash",
+    "gatsby-remark-source-name",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -30,8 +31,15 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "posts",
-        path: `${__dirname}/content/`
+        name: "notes",
+        path: `${__dirname}/content/notes`
+      }
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: `${__dirname}/content/pages`
       }
     },
     {

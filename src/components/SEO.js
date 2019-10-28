@@ -24,12 +24,12 @@ class SEO extends Component {
       image = config.siteLogo;
     }
 
-    if (
-      !image.match(
-        `(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]`
-      )
-    )
-      image = urljoin(config.siteUrl, config.pathPrefix, image);
+    // if (
+    //   !image.match(
+    //     `(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]`
+    //   )
+    // )
+    //   image = urljoin(config.siteUrl, config.pathPrefix, image);
 
     const blogURL = urljoin(config.siteUrl, config.pathPrefix);
     const schemaOrgJSONLD = [
@@ -53,7 +53,7 @@ class SEO extends Component {
               item: {
                 "@id": postURL,
                 name: title,
-                image
+                // image
               }
             }
           ]
@@ -65,10 +65,10 @@ class SEO extends Component {
           name: title,
           alternateName: config.siteTitleAlt ? config.siteTitleAlt : "",
           headline: title,
-          image: {
-            "@type": "ImageObject",
-            url: image
-          },
+          // image: {
+          //   "@type": "ImageObject",
+          //   url: image
+          // },
           description
         }
       );
