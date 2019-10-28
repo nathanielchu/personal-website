@@ -57,3 +57,6 @@ public/
 
 # Bundle stats
 bundle-stats.json
+
+# Visual Studio Code
+*.code-workspace
