@@ -18,10 +18,9 @@ export default class TagsPage extends Component {
           <h1>Tags</h1>
           <div className="tag-container">
             {group.map(tag => (
-              <Link to={`/tags/${kebabCase(tag.fieldValue)}`}>
+              <Link key={tag.fieldValue} to={`/tags/${kebabCase(tag.fieldValue)}`}>
                 <span key={tag.fieldValue}>
-                  {tag.fieldValue}{" "}
-                  <strong className="count">{tag.totalCount}</strong>
+                  {tag.fieldValue} <strong className="count">{tag.totalCount}</strong>
                 </span>
               </Link>
             ))}
