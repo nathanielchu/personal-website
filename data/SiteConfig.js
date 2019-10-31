@@ -14,7 +14,6 @@ const config = {
   postsPerPage: 4, // Amount of posts displayed per listing page.
   userName: "Nathaniel Chu", // Username to display in the author segment.
   userEmail: "nathanielchu4@gmail.com", // Email used for RSS feed's author segment
-  userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   menuLinks: [
     {

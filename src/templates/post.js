@@ -2,7 +2,6 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
-import UserInfo from "../components/UserInfo";
 import PostTags from "../components/PostTags";
 import SocialLinks from "../components/SocialLinks";
 import SEO from "../components/SEO";
@@ -34,7 +33,6 @@ export default class PostTemplate extends React.Component {
               <PostTags tags={post.tags} />
               <SocialLinks postPath={slug} postNode={postNode} />
             </div>
-            <UserInfo config={config} />
           </div>
         </div>
       </Layout>

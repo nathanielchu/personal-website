@@ -2,13 +2,11 @@ import React, { Component } from "react";
 import {
   FacebookShareButton,
   LinkedinShareButton,
-  TwitterShareButton,
   TelegramShareButton,
   RedditShareButton,
   FacebookShareCount,
   RedditShareCount,
   FacebookIcon,
-  TwitterIcon,
   TelegramIcon,
   LinkedinIcon,
   RedditIcon
@@ -35,9 +33,6 @@ class SocialLinks extends Component {
             {count => renderShareCount(count)}
           </RedditShareCount>
         </RedditShareButton>
-        <TwitterShareButton url={url} title={post.title}>
-          <TwitterIcon round size={iconSize} />
-        </TwitterShareButton>
         <FacebookShareButton url={url} quote={postNode.excerpt}>
           <FacebookIcon round size={iconSize} />
           <FacebookShareCount url={url}>
