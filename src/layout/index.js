@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
-import Navigation from '../components/Navigation'
-import Footer from '../components/Footer'
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 import config from "../../data/SiteConfig";
 
 export default class MainLayout extends React.Component {

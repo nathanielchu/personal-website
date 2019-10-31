@@ -1,7 +1,7 @@
 /* eslint "no-console": "off" */
 
 const path = require("path");
-const kebabCase = require('lodash.kebabcase')
+const kebabCase = require("lodash.kebabcase");
 const moment = require("moment");
 const siteConfig = require("./data/SiteConfig");
 
@@ -49,7 +49,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // Get a full list of markdown posts
   const markdownQueryResult = await graphql(`
     {
-      allMarkdownRemark{
+      allMarkdownRemark {
         edges {
           node {
             fields {
@@ -78,37 +78,37 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const postsEdges = markdownQueryResult.data.allMarkdownRemark.edges;
 
-  postsEdges.forEach((edge, index) => {
+  postsEdges.forEach(edge => {
     if (edge.node.frontmatter.tags) {
       edge.node.frontmatter.tags.forEach(tag => {
-        tagSet.add(tag)
-      })
+        tagSet.add(tag);
+      });
     }
 
     if (edge.node.frontmatter.category) {
-      categorySet.add(edge.node.frontmatter.category)
+      categorySet.add(edge.node.frontmatter.category);
     }
 
-    if (edge.node.fields.sourceName === 'notes') {
+    if (edge.node.fields.sourceName === "notes") {
       createPage({
         path: edge.node.fields.slug,
         component: postPage,
         context: {
-          slug: edge.node.fields.slug,
+          slug: edge.node.fields.slug
         }
       });
     }
 
-    if (edge.node.fields.sourceName === 'pages') {
+    if (edge.node.fields.sourceName === "pages") {
       createPage({
         path: edge.node.fields.slug,
         component: pagePage,
         context: {
-          slug: edge.node.fields.slug,
-        },
-      })
+          slug: edge.node.fields.slug
+        }
+      });
     }
-  })
+  });
 
   tagSet.forEach(tag => {
     createPage({

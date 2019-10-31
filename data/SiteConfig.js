@@ -19,11 +19,11 @@ const config = {
   menuLinks: [
     {
       name: "Me",
-      link: "/me/",
+      link: "/me/"
     },
     {
       name: "About",
-      link: "/about/",
+      link: "/about/"
     }
   ],
   themeColor: "#c62828", // Used for setting manifest and progress theme colors.

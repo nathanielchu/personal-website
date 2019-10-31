@@ -1,15 +1,18 @@
 import React, { Component } from "react";
-import netlify from '../../content/images/netlify.png'
-import gatsby from '../../content/images/gatsby.png'
-import github from '../../content/images/github.png'
+import netlify from "../../content/images/netlify.png";
+import gatsby from "../../content/images/gatsby.png";
+import github from "../../content/images/github.png";
 
 class Footer extends Component {
   render() {
-    const { config } = this.props;
+    // const { config } = this.props;
     return (
       <footer className="footer">
         <div>
-          <a href="https://github.com/nathanielchu" title="Open-source on GitHub">
+          <a
+            href="https://github.com/nathanielchu"
+            title="Open-source on GitHub"
+          >
             <img
               src={github}
               target="_blank"

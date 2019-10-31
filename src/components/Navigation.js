@@ -1,34 +1,37 @@
-import React, { Component } from 'react'
-import { Link } from 'gatsby'
+import React, { Component } from "react";
+import { Link } from "gatsby";
 
 export default class Navigation extends Component {
+  constructor() {
+    super();
+    this.state = {
+      scrolled: false
+    };
 
-  state = {
-    scrolled: false,
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.navOnScroll)
+    window.addEventListener("scroll", this.handleScroll);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.navOnScroll)
+    window.removeEventListener("scroll", this.handleScroll);
   }
 
-  navOnScroll = () => {
+  handleScroll = () => {
     if (window.scrollY > 20) {
-      this.setState({ scrolled: true })
+      this.setState({ scrolled: true });
     } else {
-      this.setState({ scrolled: false })
+      this.setState({ scrolled: false });
     }
-  }
+  };
 
   render() {
-    const { scrolled } = this.state
-    const { menuLinks } = this.props
+    const { scrolled } = this.state;
+    const { menuLinks } = this.props;
 
     return (
-      <nav className={scrolled ? 'nav scroll' : 'nav'}>
+      <nav className={scrolled ? "nav scroll" : "nav"}>
         <div className="nav-container">
           <div className="brand">
             <Link to="/">
@@ -44,6 +47,6 @@ export default class Navigation extends Component {
           </div>
         </div>
       </nav>
-    )
+    );
   }
 }

@@ -1,5 +1,4 @@
 const urljoin = require("url-join");
-const path = require("path");
 const config = require("./data/SiteConfig");
 
 module.exports = {
@@ -14,7 +13,7 @@ module.exports = {
       image_url: `${urljoin(
         config.siteUrl,
         config.pathPrefix
-      )}/logos/logo-512.png`,
+      )}/logos/logo-512.png`
     }
   },
   plugins: [
@@ -56,7 +55,14 @@ module.exports = {
             resolve: "gatsby-remark-responsive-iframe"
           },
           "gatsby-remark-copy-linked-files",
-          "gatsby-remark-autolink-headers",
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              offsetY: `0`,
+              maintainCase: false,
+              removeAccents: true
+            }
+          },
           "gatsby-remark-prismjs"
         ]
       }

@@ -52,7 +52,7 @@ class SEO extends Component {
               position: 1,
               item: {
                 "@id": postURL,
-                name: title,
+                name: title
                 // image
               }
             }
