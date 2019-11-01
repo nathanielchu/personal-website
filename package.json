@@ -43,6 +43,7 @@
     "url-join": "^4.0.0"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
     "cli-glob": "^0.1.0",
     "eslint": "^6.5.0",
     "eslint-config-airbnb": "^18.0.1",

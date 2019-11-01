@@ -10,8 +10,8 @@ describe("Footer", () => {
     const netlify = footerComponent.getByTitle("Hosted by Netlify")
     const gatsby = footerComponent.getByTitle("Built with Gatsby")
 
-    expect(github["href"]).toBe("https://github.com/nathanielchu")
-    expect(netlify["href"]).toBe("https://www.netlify.com/")
-    expect(gatsby["href"]).toBe("https://www.gatsbyjs.org/")
+    expect(github.href).toBe("https://github.com/nathanielchu")
+    expect(netlify.href).toBe("https://www.netlify.com/")
+    expect(gatsby.href).toBe("https://www.gatsbyjs.org/")
   })
 })
